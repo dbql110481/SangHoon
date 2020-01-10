@@ -1,1 +1,62 @@
+/*Animation*/
+@keyframes rolling {
+	from {
+		margin-top: 0;
+	}
+	to {
+		margin-top: -1.5em;
+	}
+}
+/*css*/
+body, h1, ul {
+	margin: 0;
+	padding: 0;
+}
 
+li {
+	list-style-type: none;
+}
+
+h1 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.photo {
+	background-image: url(images/main.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	padding-top: 56.25%;
+	opacity: 0.5;
+	text-align: center;
+}
+
+.name {
+	font-size: 30px;
+	line-height: 1.5;
+}
+
+.name-job {
+	display: inline-block;
+	vertical-align: top;
+	height: 1.5em;
+	overflow: hidden;
+	padding-right: 0.5em;
+}
+
+.name-job-lsit {
+	animation-name: rolling;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.name-title {
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+.profile {
+	background-color: #111;
+}
