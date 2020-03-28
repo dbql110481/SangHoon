@@ -13,9 +13,9 @@ HTML과 CSS를 연습하고 웹에 더 익숙해지고자 작업한 페이지입
 - 형상관리 : git, github
 
 ## 구현 화면
-![](img/1.png)
-![](img/2.png)
-![](img/3.png)
-![](img/4.png)
-![](img/5.png)
-![](img/6.png)
+![](images/1.png)
+![](images/2.png)
+![](images/3.png)
+![](images/4.png)
+![](images/5.png)
+![](images/6.png)
