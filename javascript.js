@@ -1,6 +1,7 @@
 var animateHTML = function () {
   var elems,
-  shdowelems,
+  charts,
+  shadow,
   windowHeight;
 
   var init = function () {
@@ -16,15 +17,12 @@ var animateHTML = function () {
     window.addEventListener("resize", init);
   };
   var _checkPosition = function () {
-    for (var i = 0; i < elems.length; i++) {
-      var posFromTop = elems[i].getBoundingClientRect().top;
-      if (posFromTop - windowHeight <= 0) {
-    	  for (var j = 1; j < 7; j++){
-    		  charts[j-1].classList.add("bounce-chart" + j);
-    	      shadow[j-1].classList.add("bounce-chart" + j);
-    	  }
-      }
-    }
+    	if (elems[0].getBoundingClientRect().top - windowHeight < 0) {
+    		for (var i = 1; i < 7; i++){
+    			charts[i-1].classList.add("bounce-chart" + i);
+    			shadow[i-1].classList.add("bounce-chart" + i);
+    		}
+    	}
   };
 
   return {
