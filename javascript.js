@@ -17,7 +17,7 @@ var animateHTML = function () {
     window.addEventListener("resize", init);
   };
   var _checkPosition = function () {
-    	if (elems[0].getBoundingClientRect().top - windowHeight < 0) {
+    	if ((elems[0].getBoundingClientRect().top + 100) - windowHeight < 0) {
     		for (var i = 1; i < 7; i++){
     			charts[i-1].classList.add("bounce-chart" + i);
     			shadow[i-1].classList.add("bounce-chart" + i);
