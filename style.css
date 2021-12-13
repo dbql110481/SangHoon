@@ -619,47 +619,113 @@ span.center6 {
     border-right: 1903px solid transparent;
 }
 
-.contact {
-	background-color: #f1f1f1;
+.scene {
+	width: 500px;
+	height: 200px;
+	perspective: 600px;
+}
+
+.card {
 	width: 100%;
-	height: 550px;
+	height: 100%;
+	position: relative;
+	transition: transform 1s;
+	transform-style: preserve-3d;
 }
 
-.contact-section {
-	width: 48%;
-	height: 100%;	
-	margin-left: 40%;
+.card.is-flipped {
+	transform: rotateY(180deg);
 }
 
-.content {
-	width: 300px; 
-	height: 150px;
+.card_front{
+	position:relative;
+	background-color: #232323;
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
 }
 
-.wrap-img {
-	width: 100px;
+.card_front:before {
+	content:''; 
+	display:block;  
+	position:absolute; 
+	top:0; left:0; 
+	background: #fff; 
+	border-width:0 0 13px 13px; 
+	border-style:solid; 
+	border-color:transparent transparent rgba(56, 173, 193, 0.9); }
+
+.card_front:hover:before{
+	content:''; 
+	display:block;  
+	position:absolute; 
+	top:0; left:0; 
+	background: #fff; 
+	border-width:0 0 62px 62px; 
+	border-style:solid; 
+	border-color:transparent transparent rgba(56, 173, 193, 0.9);
+	transition-property: all;
+	transition-duration: 1.5s;
+}
+
+.card_back{
+	position:relative;
+	display: flex;
+	background-color: #232323;
+	width: 500px;
+	height: 200px;
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.letter{
+	color: #FFFFFF;
+}
+
+.front{
+	padding-left: 15px;
+	font-size: 20px;
+}
+
+.textColor{
+	color: #4FC9DE;
+}
+
+.weight{
+	font-weight: bold;
+}
+
+.foot{
+	margin-top: 116px;
+	padding-right: 15px;
+	text-align: right;
+	background: linear-gradient(#232323 77%, #4FC9DE 23%);
+}
+
+.contents{
+	margin: auto;
+	line-height: 35px;
+}
+
+.left_contents{
 	float: left;
+	padding-top: 35px;
+	margin-right: 60px;
+	font-size: 25px;
+	font-family: 'Lexend Giga', sans-serif;
 }
 
-.wrap-content {
-	width: 350px;
-	margin-left: 50px;
+.right_contents{
+	float: left;
+	border-left: 3px solid #4FC9DE;
 	padding-top: 10px;
-}
-
-.content-font-title {
+	padding-bottom: 10px;
+	padding-left: 90px;
 	font-family: 'Lexend Giga', sans-serif;
-	font-size: 20px;
-}
-
-.content-font {
-	font-family: 'Lexend Giga', sans-serif;
-	font-size: 20px;
-}
-
-.contact-title {
-	color: #9354ED;
-	font-size: 40px;
-	font-family: 'Lexend Giga', sans-serif;
-	margin-bottom: 50px;
 }
