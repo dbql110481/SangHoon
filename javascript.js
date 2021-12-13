@@ -1,7 +1,7 @@
 var card = document.querySelector('.card');
     
-  card.addEventListener( 'click', function() {
-    card.classList.toggle('is-flipped');
+  document.getElementsByClassName("card").click(function() {
+    document.getElementsByClassName("card").classList.toggle('is-flipped');
   });
 
 var animateHTML = function () {
