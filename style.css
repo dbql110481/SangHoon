@@ -92,7 +92,7 @@ h1, h2, h3, h4 {
 /*메인 첫 화면 부분*/
 .photo {
 	width: 100%;
-	height: auto;
+	height: 920px;
 }
 
 .photo::after {
