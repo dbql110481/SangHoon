@@ -656,7 +656,10 @@ span.center6 {
 	background: #fff; 
 	border-width:0 0 13px 13px; 
 	border-style:solid; 
-	border-color:transparent transparent rgba(56, 173, 193, 0.9); }
+	border-color:transparent transparent rgba(56, 173, 193, 0.9);
+	transition-property: all;
+	transition-duration: 1.5s;
+}
 
 .card_front:hover:before{
 	content:''; 
