@@ -631,6 +631,11 @@ span.center6 {
 	margin-left: 40%;
 }
 
+.contact-title {
+	color: #9354ED;
+	font-size: 40px;
+}
+
 .scene {
 	width: 500px;
 	height: 200px;
