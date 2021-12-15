@@ -1,8 +1,8 @@
 var card = document.querySelector('.card');
     
-  document.getElementsByClassName("card").click(function() {
-    document.getElementsByClassName("card").classList.toggle('is-flipped');
-  });
+  card.onclick = function() {
+    card.classList.toggle('is-flipped');
+  };
 
 var animateHTML = function () {
   var elems,
