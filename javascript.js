@@ -1,4 +1,4 @@
-var card = document.querySelector('.card');
+var card = document.querySelector(".card");
     
   card.onclick = function() {
     card.classList.toggle('is-flipped');
