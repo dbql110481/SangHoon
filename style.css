@@ -683,7 +683,7 @@ span.center6 {
 	display:block;  
 	position:absolute; 
 	top:0; left:0; 
-	background: #fff; 
+	background-image:url(img/code1.PNG);
 	border-width:0 0 62px 62px; 
 	border-style:solid; 
 	border-color:transparent transparent rgba(56, 173, 193, 0.9);
