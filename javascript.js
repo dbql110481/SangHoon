@@ -1,4 +1,4 @@
-var card = document.querySelector(".card");
+var card = document.querySelector(".moveCard");
 var timeDownUp = null;
 var startXpos = null;
 var startYpos = null;
