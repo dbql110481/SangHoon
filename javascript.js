@@ -1,8 +1,35 @@
 var card = document.querySelector(".card");
+var timeDownUp = null;
+var startXpos = null;
+var startYpos = null;
+
+card.addEventListener("mousedown", function(){
+    timeDownUp = event.clientX + event.clientY;
+    startXpos = event.clientX;
+    startYpos = event.clientY;
+});
+
+card.addEventListener("mouseup", function(){
+    timeDownUp = event.clientX + event.clientY;
+});
+
+card.addEventListener("mousemove", function() {
+    var timeMove = event.clientX + event.clientY;
+    timeDownUp += 10;
     
-  card.onclick = function() {
-    card.classList.toggle('is-flipped');
-  };
+    if (timeMove !== timeDownUp) {
+        if (event.which === 1) {
+            var mouseXpos = event.clientX;
+            var mouseYpos = event.clientY;
+            var YrotateDeg = (startXpos - mouseXpos) * -0.3;
+            var XrotateDeg = (startYpos - mouseYpos) * 0.3;
+
+            document.getElementById("card").style.transform = "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)";
+        }
+    } else {
+        timeDownUp = null;
+    }
+});
 
 var animateHTML = function () {
   var elems,
