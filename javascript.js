@@ -3,6 +3,10 @@ var timeDownUp = null;
 var startXpos = null;
 var startYpos = null;
 
+document.querySelector(".card").ondragstart = function() {
+  return false;
+};
+
 card.addEventListener("mousedown", function(){
     timeDownUp = event.clientX + event.clientY;
     startXpos = event.clientX;
