@@ -615,12 +615,12 @@ span.center6 {
 .profile-bottom {
 	width: 0;
 	height: 0;	
-	border-bottom: 230px solid #FFFFB0;
+	border-bottom: 230px solid #F1F0EC;
     border-right: 1903px solid transparent;
 }
 
 .contact {
-	background-color: #FFFFB0;
+	background-color: #F1F0EC;
 	width: 100%;
 	height: 550px;
 }
