@@ -676,28 +676,32 @@ span.center6 {
 
 .card_front:before {
 	content:''; 
-	display:block;  
-	position:absolute; 
-	top:0; left:0; 
-	border-width:0 0 13px 13px; 
-	border-style:solid; 
-	background-color: rgba(255,255,255, 0);
-	border-color:transparent transparent rgba(56, 173, 193, 0.9);
-	transition-property: all;
-	transition-duration: 1.5s;
+        display:block;  
+        position:absolute; 
+        top:0; left:0; 
+        border-width:0 0 13px 13px; 
+        border-style:solid; 
+        background: url(img/code1.PNG); 
+        background-attachment: fixed;
+        background-size: cover;
+        border-color:transparent transparent rgba(56, 173, 193, 1.0);
+        transition-property: all;
+        transition-duration: 1.5s;
 }
 
 .card_front:hover:before{
 	content:''; 
-	display:block;  
-	position:absolute; 
-	top:0; left:0; 
-	border-width:0 0 62px 62px; 
-	border-style:solid; 
-	background-color: rgba(255,255,255, 0);
-	border-color:transparent transparent rgba(56, 173, 193, 0.9);
-	transition-property: all;
-	transition-duration: 1.5s;
+        display:block;  
+        position:absolute; 
+        top:0; left:0; 
+        border-width:0 0 62px 62px; 
+        border-style:solid; 
+        background: url(img/code1.PNG); 
+        background-attachment: fixed;
+        background-size: cover;
+        border-color:transparent transparent rgba(56, 173, 193, 1.0);
+        transition-property: all;
+        transition-duration: 1.5s;
 }
 
 .card_back{
