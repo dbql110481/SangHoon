@@ -1,70 +1,93 @@
-var card = document.querySelector(".moveCard");
-var timeDownUp = null;
-var startXpos = null;
-var startYpos = null;
+    var card = document.querySelector(".moveCard");
+    var timeDownUp = null;
+    var startXpos = null;
+    var startYpos = null;
 
-document.querySelector(".card").ondragstart = function() {
-  return false;
-};
+    document.querySelector(".card").ondragstart = function() {
+    return false;
+    };
 
-card.addEventListener("mousedown", function(){
-    timeDownUp = event.clientX + event.clientY;
-    startXpos = event.clientX;
-    startYpos = event.clientY;
-});
+    card.addEventListener("mousedown", function(){
+        timeDownUp = event.clientX + event.clientY;
+        startXpos = event.clientX;
+        startYpos = event.clientY;
+    });
 
-card.addEventListener("mouseup", function(){
-    timeDownUp = event.clientX + event.clientY;
-});
+    card.addEventListener("mouseup", function(){
+        timeDownUp = event.clientX + event.clientY;
+    });
 
-card.addEventListener("mousemove", function() {
-    var timeMove = event.clientX + event.clientY;
-    timeDownUp += 10;
-    
-    if (timeMove !== timeDownUp) {
-        if (event.which === 1) {
-            var mouseXpos = event.clientX;
-            var mouseYpos = event.clientY;
-            var YrotateDeg = (startXpos - mouseXpos) * -0.3;
-            var XrotateDeg = (startYpos - mouseYpos) * 0.3;
+    card.addEventListener("mousemove", function() {
+        var timeMove = event.clientX + event.clientY;
+        timeDownUp += 10;
+        
+        if (timeMove !== timeDownUp) {
+            if (event.which === 1) {
+                var mouseXpos = event.clientX;
+                var mouseYpos = event.clientY;
+                var YrotateDeg = (startXpos - mouseXpos) * -0.3;
+                var XrotateDeg = (startYpos - mouseYpos) * 0.3;
 
-            document.getElementById("card").style.transform = "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)";
+                document.getElementById("card").style.transform = "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)";
+            }
+        } else {
+            timeDownUp = null;
         }
-    } else {
-        timeDownUp = null;
-    }
-});
+    });
 
-var animateHTML = function () {
-  var elems,
-  charts,
-  shadow,
-  windowHeight;
+    var animateHTML = function () {
+    var elems,
+    charts,
+    shadow,
+    windowHeight;
 
-  var init = function () {
-    elems = document.getElementsByClassName("windows");
-    charts = document.getElementsByClassName("bounce-chart");
-    shadow = document.getElementsByClassName("bounce-chart-shadow");
-    windowHeight = window.innerHeight;
-    _addEventHandlers();
-  };
+    var init = function () {
+        elems = document.getElementsByClassName("windows");
+        charts = document.getElementsByClassName("bounce-chart");
+        shadow = document.getElementsByClassName("bounce-chart-shadow");
+        windowHeight = window.innerHeight;
+        _addEventHandlers();
+    };
 
-  var _addEventHandlers = function () {
-    window.addEventListener("scroll", _checkPosition);
-    window.addEventListener("resize", init);
-  };
-  var _checkPosition = function () {
-    	if ((elems[0].getBoundingClientRect().top + 100) - windowHeight < 0) {
-    		for (var i = 1; i < 7; i++){
-    			charts[i-1].classList.add("bounce-chart" + i);
-    			shadow[i-1].classList.add("bounce-chart" + i);
-    		}
-    	}
-  };
+    var _addEventHandlers = function () {
+        window.addEventListener("scroll", _checkPosition);
+        window.addEventListener("resize", init);
+    };
+    var _checkPosition = function () {
+            if ((elems[0].getBoundingClientRect().top + 100) - windowHeight < 0) {
+                for (var i = 1; i < 7; i++){
+                    charts[i-1].classList.add("bounce-chart" + i);
+                    shadow[i-1].classList.add("bounce-chart" + i);
+                }
+            }
+    };
 
-  return {
-    init: init };
+    return {
+        init: init };
 
-};
+    };
 
-animateHTML().init();
+    animateHTML().init();
+
+    const slides = document.querySelector('.slides'); 
+    let currentIdx = 0; 
+    const slideCount = 2; 
+    const prev = document.querySelector('.prev'); 
+    const next = document.querySelector('.next'); 
+    const slideWidth = window.innerWidth; 
+    const slideMargin = window.innerWidth; 
+    
+    slides.style.width = (slideWidth + slideMargin) * slideCount + 'px'; 
+    
+    function moveSlide(num) { 
+        slides.style.left = -num * window.innerWidth + 'px'; 
+        currentIdx = num; 
+    } 
+    
+    prev.addEventListener('click', function () { 
+        if (currentIdx !== 0) moveSlide(currentIdx - 1); 
+    }); 
+    
+    next.addEventListener('click', function () {
+        if (currentIdx !== slideCount - 1) { moveSlide(currentIdx + 1); } 
+    });
