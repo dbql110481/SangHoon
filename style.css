@@ -106,10 +106,6 @@
         width: 1600px;
         height: 920px;
         content: "";
-        background-image: url(img/main.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
         position: absolute;
         top: 0;
         left: 0;
