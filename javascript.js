@@ -81,13 +81,22 @@
     
     function moveSlide(num) { 
         slides.style.left = -num * window.innerWidth + 'px'; 
-        currentIdx = num; 
+        currentIdx = num;  
     } 
     
     prev.addEventListener('click', function () { 
         if (currentIdx !== 0) moveSlide(currentIdx - 1); 
+        document.getElementById("change1").style.backgroundColor = "#FAEBEF";
+        document.getElementById("change2").style.backgroundColor = "#FAEBEF";
+        document.getElementById("change3").style.backgroundColor = "#FAEBEF";
+        document.getElementById("career").style.display = "block";
     }); 
     
     next.addEventListener('click', function () {
         if (currentIdx !== slideCount - 1) { moveSlide(currentIdx + 1); } 
+        document.getElementById("change1").style.backgroundColor = "#333D79";
+        document.getElementById("change2").style.backgroundColor = "#333D79";
+        document.getElementById("change3").style.backgroundColor = "#333D79";
+        document.getElementById("career").style.display = "none";
     });
+  
