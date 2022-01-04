@@ -1,7 +1,10 @@
+    // contact 카드 3d 움직임 구현
     var card = document.querySelector(".moveCard");
     var timeDownUp = null;
     var startXpos = null;
     var startYpos = null;
+    var endXpos = 0;
+    var endYpos = 0;
 
     document.querySelector(".card").ondragstart = function() {
     return false;
@@ -15,6 +18,8 @@
 
     card.addEventListener("mouseup", function(){
         timeDownUp = event.clientX + event.clientY;
+        endXpos = event.clientX;
+        endYpos = event.clientY;
     });
 
     card.addEventListener("mousemove", function() {
@@ -25,8 +30,8 @@
             if (event.which === 1) {
                 var mouseXpos = event.clientX;
                 var mouseYpos = event.clientY;
-                var YrotateDeg = (startXpos - mouseXpos) * -0.3;
-                var XrotateDeg = (startYpos - mouseYpos) * 0.3;
+                var YrotateDeg = (startXpos - mouseXpos) * -0.257;
+                var XrotateDeg = (startYpos - mouseYpos) * 0.6;
 
                 document.getElementById("card").style.transform = "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)";
             }
@@ -35,6 +40,11 @@
         }
     });
 
+    function flip(){
+        document.getElementById("card").style.transform = "rotateY(180deg)";
+    }
+
+    // skill 애니메이션 구현
     var animateHTML = function () {
     var elems,
     charts,
@@ -69,6 +79,7 @@
 
     animateHTML().init();
 
+    // career와 education 화면 슬라이드 구현
     const slides = document.querySelector('.slides'); 
     let currentIdx = 0; 
     const slideCount = 2; 
@@ -99,4 +110,3 @@
         document.getElementById("change3").style.backgroundColor = "#333D79";
         document.getElementById("career").style.display = "none";
     });
-  
