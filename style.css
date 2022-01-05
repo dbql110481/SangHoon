@@ -1,5 +1,5 @@
 /*Animation*/
-    @keyframes rolling {
+@keyframes rolling {
         0% {
             transform: translateY(0);
         }
@@ -675,12 +675,12 @@
         width: 0;
         height: 0;
         background-color: #FAEBEF;	
-        border-bottom: 230px solid #F1F0EC;
+        border-bottom: 230px solid #E5E5E5;
         border-right: 1600px solid transparent;
     }
 
     .contact {
-        background-color: #F1F0EC;
+        background-color: #E5E5E5;
         width: 100%;
         height: 900px;
     }
@@ -695,9 +695,28 @@
         font-size: 40px;
         font-family: 'Righteous', cursive;
         margin-bottom: 20px;
-        color: #1F2247;
+        color: #232323;
         margin-left: 10%;
     }
+
+    .str{
+        margin-top: 60px;
+    }
+
+    .contact-str {
+        font-size: 30px;
+        font-family: 'Righteous', cursive;
+        margin-bottom: 20px;
+        color: #232323;
+        margin-left: 22%;
+        float: left;
+        cursor: pointer;
+    }  
+
+    .contact-str:hover {
+        color: #4FC9DE;
+        transform: translateY(-2px);
+    } 
 
     .scene {
         width: 700px;
@@ -719,7 +738,6 @@
         width: 700px;
         height: 300px;
         position: absolute;
-        background-image:url(img/code1.PNG);
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
@@ -744,7 +762,7 @@
         top:0; left:0; 
         border-width:0 0 20px 20px; 
         border-style:solid; 
-        background: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Notepad%2B%2B_v5.1.PNG"); 
+        background: url(img/code1.PNG); 
         background-attachment: fixed;
         background-size: cover;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -759,7 +777,7 @@
         top:0; left:0; 
         border-width:0 0 80px 80px; 
         border-style:solid; 
-        background: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Notepad%2B%2B_v5.1.PNG"); 
+        background: url(img/code1.PNG); 
         background-attachment: fixed;
         background-size: cover;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -825,4 +843,4 @@
         padding-bottom: 12px;
         padding-left: 125px;
         font-family: 'Lexend Giga', sans-serif;
-    }    
+    }
