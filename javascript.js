@@ -1,4 +1,4 @@
-    // contact 카드 3d 움직임 구현
+// contact 카드 3d 움직임 구현
     var card = document.querySelector(".moveCard");
     var timeDownUp = null;
     var startXpos = null;
@@ -40,8 +40,12 @@
         }
     });
 
-    function flip(){
-        document.getElementById("card").style.transform = "rotateY(180deg)";
+    function front(){
+        document.getElementById("card").style.transform = "rotateX(0deg) rotateY(0deg)";
+    }
+
+    function back(){
+        document.getElementById("card").style.transform = "rotateX(0deg) rotateY(180deg)";
     }
 
     // skill 애니메이션 구현
