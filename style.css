@@ -106,10 +106,6 @@
         width: 1600px;
         height: 920px;
         content: "";
-        background-image: url(img/main.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
         position: absolute;
         top: 0;
         left: 0;
@@ -764,7 +760,7 @@
         border-style:solid; 
         background: url(img/code1.PNG); 
         background-attachment: fixed;
-        background-size: cover;
+        background-position: 231px 125px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
         transition-property: all;
         transition-duration: 1.5s;
@@ -779,7 +775,7 @@
         border-style:solid; 
         background: url(img/code1.PNG); 
         background-attachment: fixed;
-        background-size: cover;
+        background-position: 231px 125px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
         transition-property: all;
         transition-duration: 1.5s;
