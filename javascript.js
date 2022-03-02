@@ -1,4 +1,4 @@
-// contact 카드 3d 움직임 구현
+    // contact 카드 3d 움직임 구현
     var card = document.querySelector(".moveCard");
     var timeDownUp = null;
     var startXpos = null;
@@ -104,6 +104,8 @@
         document.getElementById("change1").style.backgroundColor = "#FAEBEF";
         document.getElementById("change2").style.backgroundColor = "#FAEBEF";
         document.getElementById("change3").style.backgroundColor = "#FAEBEF";
+        document.getElementById("prev").style.color = "#333D79";
+        document.getElementById("next").style.color = "#333D79";
         document.getElementById("career").style.display = "block";
     }); 
     
@@ -112,5 +114,7 @@
         document.getElementById("change1").style.backgroundColor = "#333D79";
         document.getElementById("change2").style.backgroundColor = "#333D79";
         document.getElementById("change3").style.backgroundColor = "#333D79";
+        document.getElementById("prev").style.color = "#FAEBEF";
+        document.getElementById("next").style.color = "#FAEBEF";
         document.getElementById("career").style.display = "none";
     });
