@@ -11,7 +11,40 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="box">
+<div class="cover">      
+<div class="protectionFilm"></div>      
+<div class="modal">
+    <div id="slide-show">
+        <div class="modal-slides">
+            <div class="modal-img" id="img1" style="width: 700px; background: url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/1.png?raw=true') center center / cover;"></div>
+            <div class="modal-img" id="img2" style="width: 700px; background: url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/3.png?raw=true') center center / cover;"></div>
+            <div class="modal-img" id="img3" style="width: 700px; background: url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/4.png?raw=true') center center / cover;"></div>
+        </div>
+        <p class="controller">
+            <span class="modal-prev" id="modal-prev">&lang;</span> 
+            <span class="modal-next" id="modal-next">&rang;</span> 
+        </p>
+    </div>
+    <div id="modal-info">
+        <div id="modal-title"></div>
+        <div class = "modal-detail" id="modal-portfolio">포트폴리오 사이트는 저를 소개하기위한 사이트 입니다. <br/>
+            제가 구현을 할 수 있는 것들이 무엇들인지 보여드리기 위해 순수 자바스크립트를 이용하여 작업 하였습니다.</div>
+        <div class = "modal-detail" id="modal-office">공급사 관리자 페이지는 공급사들에게 정보를 제공하기 위한 사이트 입니다.<br/>
+            일별 매출통계와 Best판매 상품, 재고소진 임박 상품, 공지사항등을 확인할 수 있도록 작업한 페이지 입니다.</div>
+        <div class = "modal-detail" id="modal-english">영어를 공부하기 위한 스터디를 구성 할 수 있도록 도와주는 플랫폼 입니다. <br/>
+            스터디 그룹별 방을 개설 할 수 있도록 하였고, 공부에 도움이 될 수 있는 정보를 공유할수 있는 게시판과
+            웹 게임을 이용하여 경쟁하듯이 영어 단어를 공부할 수 있는 등 영어 공부에 흥미를 느낄 수 있도록 작업한 플랫폼 입니다.</div> 
+        <div class = "modal-detail" id="modal-goods">상품의 상세정보를 확인할 수 있는 페이지 입니다. <br/>
+            상품의 일자별 매출 통계를 조회 할 수 있고 상품의 변동사항과 지역별 연령별 매출비중등의 상품 정보를 확인할 수 있는 페이지 입니다.</div>  
+        <div class = "modal-detail" id="modal-store">핌아시아의 주력 사업인 온라인 쇼핑몰 떠리몰 입니다.<br/>
+            떠리몰의 웹사이트와 모바일앱의 전체적인 UX/UI 리뉴얼 작업에 참여 하였으며, <br/> 
+            페이지의 유지보수를 팀원들과 함께 담당하였습니다.</div>
+        <div class = "modal-detail" id="modal-search">원하는 데이터를 검색할 수 있도록 구현한 기능입니다. <br/>
+            원하는 데이터를 검색 할 시 해당 내용의 축약본 확인 및 검색어와 일치하는 부분에 하이라이트를 넣어 주었고,
+            하이라이트를 클릭 시 해당 내용이 표기 된 페이지의 클릭한 하이라이트가 있는 위치로 자동 이동하는 기능을 구현 하였습니다.</div>         
+    </div>
+</div>
+<div class="box"> 
 	<div class="photo"> 
 		<div class="name">
 			I'm a 
@@ -151,173 +184,190 @@
 				<h2 class="profile-font">Portfolio</h2>
 					<div class="wrapper">
 						<div class="sq clearfix">
-							<div class="sq-item">
-								<a class="sq-item-text" href="https://github.com/dbql110481/SangHoon">
-									<img class="sq-item-text-cover" src="img/sq-item5.jpg">
-									<span class="sq-item-text-title">Portfolio Site</span>
-								</a>
-							</div>
-							<div class="sq-item">
-								<a class="sq-item-text" href="https://github.com/dbql110481/calculator">
-									<img class="sq-item-text-cover" src="img/sq-item2.jpg">
-									<span class="sq-item-text-title">Back Office</span>
-								</a>
-							</div>
-							<div class="sq-item">
-								<a class="sq-item-text-fix" href="">
-									<img class="sq-item-text-cover" src="img/sq-item6.jpg">
-									<span class="sq-item-text-title">English Village</span>
-								</a>
-							</div>
-                        </div>
-                        <div class="sq clearfix">                        
-							<div class="sq-item">
-								<a class="sq-item-text" href="https://github.com/dbql110481/qwer/blob/master/Block%20Marble%20Report.docx?raw=true" target="_blank">
-									<img class="sq-item-text-cover" src="img/sq-item9.jpg">
-									<span class="sq-item-text-title">Web Game</span>
-								</a>
-							</div>
-							<div class="sq-item">
-								<a class="sq-item-text" href="https://github.com/dbql110481/qwer/blob/master/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%20(6%EC%A1%B0%20-%20%EC%96%91%ED%9D%A5%EC%98%81,%20%EB%B0%A9%EC%B1%84%EC%97%B0,%20%EC%A1%B0%EC%83%81%ED%9B%88,%20%ED%97%88%EA%B2%BD%ED%99%98).docx?raw=true" target="_blank">
-									<img class="sq-item-text-cover" src="img/sq-item1.jpg">
-									<span class="sq-item-text-title">Goods Detail</span>
-								</a>
-							</div>
-							<div class="sq-item">
-								<a class="sq-item-text" href="https://github.com/dbql110481/Pos">
-									<img class="sq-item-text-cover" src="img/sq-item3.jpg">
-									<span class="sq-item-text-title">Search function</span>
-								</a>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-		<div class="profile-top" id="change1"></div>
-	</div>
-	<div class="windows">			
-		<div class="profile-main" id="change2">
-            <div class="slides">
-                <div class="profile-section-career" id="career">
-                    <h2 class="career-font">Career</h2>
-                    <div class="career">
-                        <font class="sub-title">ㅇ(주)핌아시아<br></font>
-                        <font class="date">2020.07~현재<br><br></font>
-                        유통기한이 임박한 상품이나 리퍼브 상품과 같은 B급 상품들을 보다 합리적인 가격에 소비자에게 제공하는<br>
-                        온라인 재고 할인 플랫폼 THIRTYMALL을 서비스하는 업체입니다. <br><br>
-                        기본적으로는 풀스택 웹개발 업무를 담당하고 있으며, 디자인팀과의 협업을 위한 각종 프론트 엔드 관련<br> 
-                        지식의 교육과 신입 개발자의 사수 역할 등의 기타 업무를 함께 담당하고 있습니다.<br>
-                    </div>
-                    <div class="career-line">
-                        <font class="sub">ㅇ 백오피스의 전반적인 관리 및 각종 기능 추가 / 개선<br></font>
-                        2020년 07월 ~ 현재<br><br>
-
-                        1. 각 공급사들이 자신의 매출액, 재고, 출고 현황등 통계를 확인 할 수 있는 통계 페이지 개발<br>
-                        2. 물류업체의 자체 상품코드 생성 및 관리할 수 있는 페이지 개발<br>
-                        3. 상품운영정책, 디자인 가이드 등의 정책을 확인하고 등록 및 수정이 가능한 페이지 개발<br>
-                        4. 상품별 기본정보 및 배송정보, 일별 판매 수량등의 데이터를 확인할 수 있는 통계 페이지 개발<br>
-                        5. 업체들의 입점신청 현황 확인 및 담당자 지정, 입점상태를 지정할 수 있는 페이지 개발<br>
-                        6. 통계 페이지 내 AJAX비동기 통신을 이용한 실시간 통계 현황판 개발<br>
-                        7. 파트너 업체 가입신청 확인하여 담당자 지정 및 입점여부 관리할 수 있는 페이지 개발<br>
-                        8. 공급사들에게 정산을 해주기 위한 정산서 및 세금계산서 확인과 다운로드를 받을 수 있는 페이지 개발 참여<br><br>
-
-                        <font class="sub">ㅇ UX/UI 작업<br></font>
-                        2020년 07월 ~ 현재<br><br>
-
-                        1. 핌아시아에서 운영중인 온라인 쇼핑몰 떠리몰의 웹페이지, 모바일 UX/UI 리뉴얼 작업 참여<br><br>
-
-                        <font class="sub">ㅇ 대규모 서버 정리 작업<br></font>
-                        2020년 07월 ~ 현재<br><br>
-
-                        1. 관리자 권한 관련 기능 정리 및 개선<br>
-                        2. 불필요한 파일/코드 정리 작업 참여<br>
-                        3. 서버 속도개선을 위한 주문정보 데이터 이원화 작업 참여<br>
-                        4. 주문 상품정보에 인덱싱을 위한 업데이트 작업 참여<br><br>
-
-                        <font class="sub">ㅇ 작업 스케쥴러 작성<br></font>
-                        2020년 07월 ~ 현재<br><br>
-
-                        1. 데이터 수집을 위한 배치파일 작성 및 Cron을 이용한 작업 스케쥴 편집<br><br>                     
-                    </div>
-                </div>
-                <div class="profile-section-edu" id="education">
-                    <h2 class="education-font">Education</h2>
-                    <div class="education">
-                        <font class="sub">ㅇ교육기관: 삼성멀티캠퍼스<br><br></font>
-                        <font class="sub">ㅇ교육기간: 2018.04 ~ 2018.12<br><br></font>       
-                        <font class="sub">ㅇ교육과정<br></font>
-                        &nbsp;&nbsp;1.	블록체인 기반 기술의 이해 <br>
-                        &nbsp;&nbsp;2.	블록체인 개념 이해<br>
-                        &nbsp;&nbsp;3.	블록체인 기술 구조 이해<br>
-                        &nbsp;&nbsp;4.	블록체인을 이용한 실무 프로젝트<br><br>
-                        <font class="sub">ㅇProject List<br></font>
-                        &nbsp;&nbsp;1.	English Viliage <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	영어 스터디 소모임 서비스<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	멀티 유저 영 단어 베네치아 게임 도입<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Spring framework, javascript, bootstrap, oracle 기반.<br>
-                        &nbsp;&nbsp;2.	Geth 환경 구축 Shell Script<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Bash를 이용하여 모든 node에 geth 환경 구축<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Ubuntu linux환경. <br>
-                        &nbsp;&nbsp;3.	Bit Coin Model<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	BitCoin의 핵심요소를 기반으로 한 Bit Coin 모델 구현 (블록 노드 전파 제외)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	기능: 채굴, 송금, 잔액조회, 키 생성<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	채굴: 블록생성 및 보상, 트랜잭션 저장, Merkle Root생성<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	송금: UTXO조회, TX_IN/ TX_OUT 세팅, transaction 유효성 검증(Sign검증, 소유자 검증)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	잔액조회: UTXO조회<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	키 생성: 임의의 key값을 통해 public key, private key, address 생성.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Thread이용한 채굴<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Web 을 통한 Wallet service 제공.<br>
-                        &nbsp;&nbsp;4.	ICO for investor<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Ethereum 기반 refund 가능한 crowd funding service<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	기능: Crowd Funding, Ethereum기반 token생성, 분기별 환불기능.<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;-	Crowd Funding: ico 개시 후 4분기중 빠른 분기에 funding시 더 많은 비율의 token이 할당됨.<br>
-                    </div>
-                </div>
-            </div>
-            <p class="controller">
-                <span class="prev" id="prev">&lang;</span> 
-                <span class="next" id="next">&rang;</span> 
-            </p>
-		</div>
-		<div class="profile-bottom" id="change3"></div>
-	</div>
-	<div class="windows">
-		<div class="contact">
-            <h1 class="contact-title">Contact Me</h1>
-			<div class="contact-section">			
-				<div class="scene">
-				    <div id="card" class="card moveCard">
-					<div class="card_front">
-					    <div class="letter front">Web Developer<font class="textColor">.</font></div>
-					    <div class="letter front foot">조상훈</div>
-					</div>
-					<div class="background">
-					</div>	
-					<div class="card_back">
-					    <div class="contents">
-						<div class="left_contents">
-						    <div class="letter"><font class="weight">조상훈</font><font class="textColor">.</font></div>
-						    <div class="letter">DEV<font class="textColor">, </font>PG<font class="textColor">.</font></div>
-						</div>
-						<div class="right_contents">
-						    <div class="letter">
-                                <div id="github"></div>
-                                <label for="github">github.com/dbql110481</label>
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">Portfolio Site</div>
+                                </div>
+                                <div class="button" id="portfolio">LEARN MORE</div>
                             </div>
-						    <div class="letter">Phone</div>
-						    <div class="letter">Email</div>
-						    <div class="letter">Kakao</div>
+                        </div>
+                        <div class="sq clearfix">    
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">Back Office</div>
+                                </div>
+                                <div class="button" id="office">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="sq clearfix">    
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">English Village</div>
+                                </div>
+                                <div class="button" id="english">LEARN MORE</div>
+                            </div>
+                        </div>
+                     </div>
+                     <div class="wrapper">   
+                        <div class="sq clearfix">    
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">Goods Detail</div>
+                                </div>
+                                <div class="button" id="detail">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="sq clearfix">    
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">Thirty Mall</div>
+                                </div>
+                                <div class="button" id="store">LEARN MORE</div>
+                            </div>
+                        </div>
+                        <div class="sq clearfix">    
+                            <div class="sq-box">
+                                <div class="sq-item"></div>
+                                <div class="text">
+                                    <div class="bold">Search</div>
+                                </div>
+                                <div class="button" id="search">LEARN MORE</div>
+                            </div>
+                        </div>    
 						</div>
-					    </div>
-					</div>        
-				    </div>
-				</div>
-                <div class="str">
-                    <div class="contact-str" onclick="front()">FRONT</div><div class="contact-str" onclick="back()">BACK</div>
-                </div>          
+					</div>
 			</div>
-		</div>
-	</div>
+            <div class="profile-top" id="change1"></div>
+            <div class="profile-box">			
+                <div class="profile-main" id="change2">
+                    <div class="slides">
+                        <div class="profile-section-career" id="career">
+                            <h2 class="career-font">Career</h2>
+                            <div class="career">
+                                <font class="sub-title">ㅇ(주)핌아시아<br></font>
+                                <font class="date">2020.07~현재<br><br></font>
+                                유통기한이 임박한 상품이나 리퍼브 상품과 같은 B급 상품들을 보다 합리적인 가격에 소비자에게 제공하는<br>
+                                온라인 재고 할인 플랫폼 THIRTYMALL을 서비스하는 업체입니다. <br><br>
+                                기본적으로는 풀스택 웹개발 업무를 담당하고 있으며, 디자인팀과의 협업을 위한 각종 프론트 엔드 관련<br> 
+                                지식의 교육과 신입 개발자의 사수 역할 등의 기타 업무를 함께 담당하고 있습니다.<br>
+                            </div>
+                            <div class="career-line">
+                                <font class="sub">ㅇ 백오피스의 전반적인 관리 및 각종 기능 추가 / 개선<br></font>
+                                2020년 07월 ~ 현재<br><br>
+        
+                                1. 각 공급사들이 자신의 매출액, 재고, 출고 현황등 통계를 확인 할 수 있는 통계 페이지 개발<br>
+                                2. 물류업체의 자체 상품코드 생성 및 관리할 수 있는 페이지 개발<br>
+                                3. 상품운영정책, 디자인 가이드 등의 정책을 확인하고 등록 및 수정이 가능한 페이지 개발<br>
+                                4. 상품별 기본정보 및 배송정보, 일별 판매 수량등의 데이터를 확인할 수 있는 통계 페이지 개발<br>
+                                5. 업체들의 입점신청 현황 확인 및 담당자 지정, 입점상태를 지정할 수 있는 페이지 개발<br>
+                                6. 통계 페이지 내 AJAX비동기 통신을 이용한 실시간 통계 현황판 개발<br>
+                                7. 파트너 업체 가입신청 확인하여 담당자 지정 및 입점여부 관리할 수 있는 페이지 개발<br>
+                                8. 공급사들에게 정산을 해주기 위한 정산서 및 세금계산서 확인과 다운로드를 받을 수 있는 페이지 개발 참여<br><br>
+        
+                                <font class="sub">ㅇ UX/UI 작업<br></font>
+                                2020년 07월 ~ 현재<br><br>
+        
+                                1. 핌아시아에서 운영중인 온라인 쇼핑몰 떠리몰의 웹페이지, 모바일 UX/UI 리뉴얼 작업 참여<br><br>
+        
+                                <font class="sub">ㅇ 대규모 서버 정리 작업<br></font>
+                                2020년 07월 ~ 현재<br><br>
+        
+                                1. 관리자 권한 관련 기능 정리 및 개선<br>
+                                2. 불필요한 파일/코드 정리 작업 참여<br>
+                                3. 서버 속도개선을 위한 주문정보 데이터 이원화 작업 참여<br>
+                                4. 주문 상품정보에 인덱싱을 위한 업데이트 작업 참여<br><br>
+        
+                                <font class="sub">ㅇ 작업 스케쥴러 작성<br></font>
+                                2020년 07월 ~ 현재<br><br>
+        
+                                1. 데이터 수집을 위한 배치파일 작성 및 Cron을 이용한 작업 스케쥴 편집<br><br>                     
+                            </div>
+                        </div>
+                        <div class="profile-section-edu" id="education">
+                            <h2 class="education-font">Education</h2>
+                            <div class="education">
+                                <font class="sub">ㅇ교육기관: 삼성멀티캠퍼스<br><br></font>
+                                <font class="sub">ㅇ교육기간: 2018.04 ~ 2018.12<br><br></font>       
+                                <font class="sub">ㅇ교육과정<br></font>
+                                &nbsp;&nbsp;1.	블록체인 기반 기술의 이해 <br>
+                                &nbsp;&nbsp;2.	블록체인 개념 이해<br>
+                                &nbsp;&nbsp;3.	블록체인 기술 구조 이해<br>
+                                &nbsp;&nbsp;4.	블록체인을 이용한 실무 프로젝트<br><br>
+                                <font class="sub">ㅇProject List<br></font>
+                                &nbsp;&nbsp;1.	English Viliage <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	영어 스터디 소모임 서비스<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	멀티 유저 영 단어 베네치아 게임 도입<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Spring framework, javascript, bootstrap, oracle 기반.<br>
+                                &nbsp;&nbsp;2.	Geth 환경 구축 Shell Script<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Bash를 이용하여 모든 node에 geth 환경 구축<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Ubuntu linux환경. <br>
+                                &nbsp;&nbsp;3.	Bit Coin Model<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	BitCoin의 핵심요소를 기반으로 한 Bit Coin 모델 구현 (블록 노드 전파 제외)<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	기능: 채굴, 송금, 잔액조회, 키 생성<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	채굴: 블록생성 및 보상, 트랜잭션 저장, Merkle Root생성<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	송금: UTXO조회, TX_IN/ TX_OUT 세팅, transaction 유효성 검증(Sign검증, 소유자 검증)<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	잔액조회: UTXO조회<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	키 생성: 임의의 key값을 통해 public key, private key, address 생성.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Thread이용한 채굴<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Web 을 통한 Wallet service 제공.<br>
+                                &nbsp;&nbsp;4.	ICO for investor<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Ethereum 기반 refund 가능한 crowd funding service<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	기능: Crowd Funding, Ethereum기반 token생성, 분기별 환불기능.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;-	Crowd Funding: ico 개시 후 4분기중 빠른 분기에 funding시 더 많은 비율의 token이 할당됨.<br>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="controller">
+                        <span class="prev" id="prev">&lang;</span> 
+                        <span class="next" id="next">&rang;</span> 
+                    </p>
+                </div>
+                <div class="profile-bottom" id="change3"></div>
+            </div>
+            <div class="contact-box">
+                <div class="contact">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <div class="contact-section">			
+                        <div class="scene">
+                            <div id="card" class="card moveCard">
+                            <div class="card_front">
+                                <div class="letter front">Web Developer<font class="textColor">.</font></div>
+                                <div class="letter front foot">조상훈</div>
+                            </div>
+                            <div class="background">
+                            </div>	
+                            <div class="card_back">
+                                <div class="contents">
+                                <div class="left_contents">
+                                    <div class="letter"><font class="weight">조상훈</font><font class="textColor">.</font></div>
+                                    <div class="letter">DEV<font class="textColor">, </font>PG<font class="textColor">.</font></div>
+                                </div>
+                                <div class="right_contents">
+                                    <div class="letter">
+                                        <div id="github"></div>
+                                        <label for="github">github.com/dbql110481</label>
+                                    </div>
+                                    <div class="letter">Phone</div>
+                                    <div class="letter">Email</div>
+                                    <div class="letter">Kakao</div>
+                                </div>
+                                </div>
+                            </div>        
+                            </div>
+                        </div>
+                        <div class="str">
+                            <div class="contact-str" onclick="front()">FRONT</div><div class="contact-str" onclick="back()">BACK</div>
+                        </div>          
+                    </div>
+                </div>
+            </div>    
+    </div>    
+</div>
 </div>
 </body>
 <script src="javascript.js"></script>	
