@@ -1,5 +1,4 @@
-/*Animation*/
-    @keyframes rolling {
+@keyframes rolling {
         0% {
             transform: translateY(0);
         }
@@ -88,18 +87,40 @@
         font-weight: normal;
     }
 
-    .box{
+    .box {
         position: relative;
-        width: 1600px;
+        width: 1660px;
         height: 100%;
-        padding: 20px 30px 0px 30px;
         margin: 0 auto;
+    }
+
+    .cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .protectionFilm {
+        display:none;
+    	position:absolute;
+    	background-color:rgba(0, 0, 0, 0.2);
+    	top:0px;
+    	left:0px;
+    	width:100%;
+    	height:100%;
+        z-index: 90;
+        transition: display 0.3s;
+    }
+
+    .windows {
+        padding: 0px 30px 0px 30px;
     }
 
     /*메인 첫 화면 부분*/
     .photo {
         width: 1600px;
         height: 920px;
+        padding: 0px 30px 0px 30px;
     }
 
     .photo::after {
@@ -462,10 +483,62 @@
         margin-left: 4%; 
     }
 
-    .profile-section {
+    .modal {
+        background-color: #FFF;
+        display: none;
+        position: fixed;
+        margin: 4% auto;
+        left:0;
+        right:0;
+        width: 700px;
+        height: 700px;
+        z-index: 99;
+    }
+
+    #modal-title {
+        font-weight: bold;
+        font-family: 'Righteous', cursive;
+        font-size: 20pt;
+        margin-bottom: 20px;
+    }
+
+    .modal-detail {
+        display: none;
+        font-size: 13pt;
+    }
+
+    #modal-info {
+        position: absolute;
+        top: 450px;
+        padding: 0 30px 0 30px;
+    }
+
+    #slide-show { 
+        width: 700px; 
+        height: 400px; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    .modal-slides { 
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        width: 2100px; 
+        height: 400px;
+        transition: left 0.5s ease-out;
+        display: flex;
+    } 
+
+    .modal-img {
         width: 48%;
         height: 100%;
-        margin-left: 25.7%;
+    }
+
+    .profile-section {
+        width: 80%;
+        height: 100%;
+        margin-left: 14%;
         padding-top: 5%;
         padding-bottom: 8%;
     }
@@ -496,15 +569,113 @@
         margin-bottom: 20px;
     }
 
-    .sq {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
+    .wrapper {
+        display:table;
+        width: 1170px;
+        table-layout:fixed;
     }
 
-    .sq-item {
-        display: table-cell;
-        vertical-align: middle;
+    .clearfix {
+        display: block;
+        position: relative;
+        display:table-cell;
+    }
+
+    .clearfix .text {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 390px;
+        color: #1b242f;
+        opacity: 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+    }
+
+    .clearfix:hover .sq-item {
+        opacity: 0;
+    }
+
+    .clearfix:hover .text {
+        cursor: default;
+        opacity: 1;
+        top: 100px;
+    }
+
+    .clearfix:hover .button {
+        box-sizing: content-box;
+        cursor: pointer;
+        display: inline-block;
+        opacity: 1;
+        top: 250px;
+    }
+
+    .clearfix .button {
+        top: 310px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        border: 2px solid #e31b6d;
+        color: #4a746a;
+        font-family: 'Righteous', cursive;
+        font-size: 13pt;
+        margin-left: 90px; 
+        padding: 7px 0;
+        width: 200px;
+        opacity: 0;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+        box-sizing: inherit;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .clearfix .button:hover {
+        background: #e31b6d;
+        color: #fff;
+    }
+
+    .bold {
+        color: #4a746a;
+        font-size: 35px;
+        font-family: 'Righteous', cursive;
+    }
+
+    .sq-box {
+        display: block;
+        position: relative;
+    }
+
+    .sq-item {       
+        float: left;
+        width: 390px;
+        height: 350px;
+    }
+
+    .wrapper:nth-of-type(1) .clearfix:nth-child(1) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item1.PNG?raw=true) center center/cover;
+    }
+
+    .wrapper:nth-of-type(1) .clearfix:nth-child(2) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item2.png?raw=true) center center/cover;
+    }
+
+    .wrapper:nth-of-type(1) .clearfix:nth-child(3) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item3.png?raw=true) center center/cover;
+    }
+
+    .wrapper:nth-of-type(2) .clearfix:nth-child(1) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item4.PNG?raw=true) center center/cover;
+    }
+
+    .wrapper:nth-of-type(2) .clearfix:nth-child(2) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item5.PNG?raw=true) center center/cover;
+    }
+
+    .wrapper:nth-of-type(2) .clearfix:nth-child(3) .sq-item {
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item6.PNG?raw=true) center center/cover;
     }
 
     .sub-title{
@@ -554,14 +725,10 @@
         color: #333D79; 
         text-align: center; 
         border-radius: 50%; 
-        padding: 10px 20px; 
-        top: 50%; 
+        padding: 10px 10px; 
+        top: 86%; 
         font-size: 1.3em; 
         cursor: pointer; 
-    } 
-    
-    .controller span:hover { 
-        background-color: rgba(234, 234, 234, 0.11); 
     } 
 
     .prev { 
@@ -570,6 +737,14 @@
     
     .prev:hover { 
         transform: translateX(-10px); 
+    }
+    
+    .modal-prev { 
+        left: 10px; 
+    } 
+    
+    .modal-prev:hover { 
+        transform: translateX(-10px); 
     } 
     
     .next { 
@@ -577,6 +752,14 @@
     } 
     
     .next:hover { 
+        transform: translateX(10px); 
+    }
+
+    .modal-next { 
+        right: 10px; 
+    } 
+    
+    .modal-next:hover { 
         transform: translateX(10px); 
     }
 
@@ -647,7 +830,7 @@
         width: 700px;
         height: 300px;
         position: absolute;
-        background-image:url(img/code1.PNG);
+        background-image:url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true);
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
@@ -672,7 +855,7 @@
         top:0; left:0; 
         border-width:0 0 40px 40px; 
         border-style:solid; 
-        background: url(img/code1.PNG); 
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true); 
         background-attachment: fixed;
         background-position: 157px 90px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -687,7 +870,7 @@
         top:0; left:0; 
         border-width:0 0 110px 110px; 
         border-style:solid; 
-        background: url(img/code1.PNG); 
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true); 
         background-attachment: fixed;
         background-position: 157px 90px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -759,7 +942,7 @@
         width: 40px;
         height: 40px;
         display: inline-block;
-        background: url(img/github.png);
+        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/github.png?raw=true);
         background-attachment: fixed;
         background-position: 10px 10px;
     }
