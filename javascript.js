@@ -1,3 +1,80 @@
+    // 팝업창 내용 설정
+    const buttons = document.querySelectorAll('.button'); 
+
+    buttons.forEach( (button) => {
+        button.addEventListener('click', popup)
+    });
+    
+    function popup(e) {
+        document.querySelector(".protectionFilm").style.display = 'block';
+        document.querySelector(".modal").style.display = 'block';
+        document.querySelector("#img1").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"1.png?raw=true') center center / cover";
+        document.querySelector("#img2").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"2.PNG?raw=true') center center / cover";
+        document.querySelector("#img3").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"3.PNG?raw=true') center center / cover";
+        switch(e.srcElement.id){
+            case 'portfolio':
+                document.getElementById("modal-title").innerHTML="Portfolio Site";
+                document.querySelector("#modal-portfolio").style.display = "block";
+                break;
+            case 'office':
+                document.getElementById("modal-title").innerHTML="Back Office";
+                document.querySelector("#modal-office").style.display = "block";
+                break;
+            case 'english':
+                document.getElementById("modal-title").innerHTML="English Village";
+                document.querySelector("#modal-english").style.display = "block";
+                break;
+            case 'detail':
+                document.getElementById("modal-title").innerHTML="Goods Detail";
+                document.querySelector("#modal-goods").style.display = "block";
+                break;
+            case 'store':
+                document.getElementById("modal-title").innerHTML="Thirty Mall";
+                document.querySelector("#modal-store").style.display = "block";
+                break;
+            case 'search':
+                document.getElementById("modal-title").innerHTML="Search";
+                document.querySelector("#modal-search").style.display = "block";
+                break;
+        };
+    };
+
+    document.querySelector(".protectionFilm").addEventListener('click', function () {
+        document.querySelector(".protectionFilm").style.display = 'none';
+        document.querySelector(".modal").style.display = 'none';
+        const details = document.querySelectorAll(".modal-detail"); 
+        details.forEach( (detail) => {
+            detail.style.display = "none"
+        });        
+    });
+
+    // 팝업창 이미지 슬라이드
+    const modalSlides = document.querySelector('.modal-slides'); 
+    const slideImg = document.querySelectorAll('.modal-img');
+    let modalCurrentIdx = 0; 
+    const modalSlideCount = slideImg.length; 
+    const modalPrev = document.querySelector('.modal-prev'); 
+    const modalNext = document.querySelector('.modal-next'); 
+    const modalSlideWidth = 700; 
+    const modalSlideMargin = 0; 
+    
+    modalSlides.style.width = (modalSlideWidth + modalSlideMargin) * modalSlideCount + 'px'; 
+    
+    function modlaMoveSlide(num) { 
+        modalSlides.style.left = -num * 700 + 'px'; 
+        modalCurrentIdx = num;  
+    } 
+    
+    modalPrev.addEventListener('click', function () { 
+        if (modalCurrentIdx !== 0) modlaMoveSlide(modalCurrentIdx - 1); 
+    }); 
+    
+    modalNext.addEventListener('click', function () {
+        console.log(modalSlideCount);
+        console.log(modalCurrentIdx);
+        if (modalCurrentIdx !== modalSlideCount - 1) { modlaMoveSlide(modalCurrentIdx + 1); } 
+    });
+
     // contact 카드 3d 움직임 구현
     var card = document.querySelector(".moveCard");
     var timeDownUp = null;
