@@ -8,9 +8,9 @@
     function popup(e) {
         document.querySelector(".protectionFilm").style.display = 'block';
         document.querySelector(".modal").style.display = 'block';
-        document.querySelector("#img1").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"1.png?raw=true') center center / cover";
-        document.querySelector("#img2").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"2.PNG?raw=true') center center / cover";
-        document.querySelector("#img3").style.background = "url('https://github.com/dbql110481/SangHoon/blob/master/img/slide/"+e.srcElement.id+"3.PNG?raw=true') center center / cover";
+        document.querySelector("#img1").style.background = "url('img/slide/"+e.srcElement.id+"1.png') center center / cover";
+        document.querySelector("#img2").style.background = "url('img/slide/"+e.srcElement.id+"2.PNG') center center / cover";
+        document.querySelector("#img3").style.background = "url('img/slide/"+e.srcElement.id+"3.PNG') center center / cover";
         switch(e.srcElement.id){
             case 'portfolio':
                 document.getElementById("modal-title").innerHTML="Portfolio Site";
