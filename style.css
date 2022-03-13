@@ -655,27 +655,27 @@
     }
 
     .wrapper:nth-of-type(1) .clearfix:nth-child(1) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item1.PNG?raw=true) center center/cover;
+        background: url(img/sq-item1.PNG) center center/cover;
     }
 
     .wrapper:nth-of-type(1) .clearfix:nth-child(2) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item2.png?raw=true) center center/cover;
+        background: url(img/sq-item2.png) center center/cover;
     }
 
     .wrapper:nth-of-type(1) .clearfix:nth-child(3) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item3.png?raw=true) center center/cover;
+        background: url(img/sq-item3.png) center center/cover;
     }
 
     .wrapper:nth-of-type(2) .clearfix:nth-child(1) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item4.PNG?raw=true) center center/cover;
+        background: url(img/sq-item4.PNG) center center/cover;
     }
 
     .wrapper:nth-of-type(2) .clearfix:nth-child(2) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item5.PNG?raw=true) center center/cover;
+        background: url(img/sq-item5.PNG) center center/cover;
     }
 
     .wrapper:nth-of-type(2) .clearfix:nth-child(3) .sq-item {
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/sq-item6.PNG?raw=true) center center/cover;
+        background: url(img/sq-item6.PNG) center center/cover;
     }
 
     .sub-title{
@@ -830,7 +830,7 @@
         width: 700px;
         height: 300px;
         position: absolute;
-        background-image:url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true);
+        background-image:url(img/code1.PNG);
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
@@ -855,7 +855,7 @@
         top:0; left:0; 
         border-width:0 0 40px 40px; 
         border-style:solid; 
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true); 
+        background: url(img/code1.PNG); 
         background-attachment: fixed;
         background-position: 157px 90px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -870,7 +870,7 @@
         top:0; left:0; 
         border-width:0 0 110px 110px; 
         border-style:solid; 
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/code1.PNG?raw=true); 
+        background: url(img/code1.PNG); 
         background-attachment: fixed;
         background-position: 157px 90px;
         border-color:transparent transparent rgba(56, 173, 193, 1.0);
@@ -942,7 +942,7 @@
         width: 40px;
         height: 40px;
         display: inline-block;
-        background: url(https://github.com/dbql110481/SangHoon/blob/master/img/github.png?raw=true);
+        background: url(img/github.png);
         background-attachment: fixed;
         background-position: 10px 10px;
     }
