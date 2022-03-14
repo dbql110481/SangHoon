@@ -34,6 +34,7 @@
     
     function popup(e) {
         document.querySelector('.modal-slides').style.left = '0px';
+        modalCurrentIdx = 0;
         document.querySelector(".protectionFilm").style.display = 'block';
         document.querySelector(".modal").style.display = 'block';
         document.querySelector("#img1").style.background = "url('img/slide/"+e.srcElement.id+"1.png') center center / cover";
