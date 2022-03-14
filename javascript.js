@@ -1,4 +1,31 @@
-    // 팝업창 내용 설정
+// 팝업창 이미지 슬라이드
+    const modalSlides = document.querySelector('.modal-slides'); 
+    const slideImg = document.querySelectorAll('.modal-img');
+    let modalCurrentIdx = 0; 
+    const modalSlideCount = slideImg.length; 
+    const modalPrev = document.querySelector('.modal-prev'); 
+    const modalNext = document.querySelector('.modal-next'); 
+    const modalSlideWidth = 700; 
+    const modalSlideMargin = 0; 
+    
+    modalSlides.style.width = (modalSlideWidth + modalSlideMargin) * modalSlideCount + 'px'; 
+    
+    function modlaMoveSlide(num) { 
+        modalSlides.style.left = -num * 700 + 'px'; 
+        modalCurrentIdx = num;  
+    } 
+    
+    modalPrev.addEventListener('click', function () { 
+        if (modalCurrentIdx !== 0) modlaMoveSlide(modalCurrentIdx - 1); 
+    }); 
+    
+    modalNext.addEventListener('click', function () {
+        console.log(modalSlideCount);
+        console.log(modalCurrentIdx);
+        if (modalCurrentIdx !== modalSlideCount - 1) { modlaMoveSlide(modalCurrentIdx + 1); } 
+    });
+
+// 팝업창 내용 설정
     const buttons = document.querySelectorAll('.button'); 
 
     buttons.forEach( (button) => {
@@ -6,6 +33,7 @@
     });
     
     function popup(e) {
+        document.querySelector('.modal-slides').style.left = '0px';
         document.querySelector(".protectionFilm").style.display = 'block';
         document.querySelector(".modal").style.display = 'block';
         document.querySelector("#img1").style.background = "url('img/slide/"+e.srcElement.id+"1.png') center center / cover";
@@ -46,33 +74,6 @@
         details.forEach( (detail) => {
             detail.style.display = "none"
         });        
-    });
-
-    // 팝업창 이미지 슬라이드
-    const modalSlides = document.querySelector('.modal-slides'); 
-    const slideImg = document.querySelectorAll('.modal-img');
-    let modalCurrentIdx = 0; 
-    const modalSlideCount = slideImg.length; 
-    const modalPrev = document.querySelector('.modal-prev'); 
-    const modalNext = document.querySelector('.modal-next'); 
-    const modalSlideWidth = 700; 
-    const modalSlideMargin = 0; 
-    
-    modalSlides.style.width = (modalSlideWidth + modalSlideMargin) * modalSlideCount + 'px'; 
-    
-    function modlaMoveSlide(num) { 
-        modalSlides.style.left = -num * 700 + 'px'; 
-        modalCurrentIdx = num;  
-    } 
-    
-    modalPrev.addEventListener('click', function () { 
-        if (modalCurrentIdx !== 0) modlaMoveSlide(modalCurrentIdx - 1); 
-    }); 
-    
-    modalNext.addEventListener('click', function () {
-        console.log(modalSlideCount);
-        console.log(modalCurrentIdx);
-        if (modalCurrentIdx !== modalSlideCount - 1) { modlaMoveSlide(modalCurrentIdx + 1); } 
     });
 
     // contact 카드 3d 움직임 구현
