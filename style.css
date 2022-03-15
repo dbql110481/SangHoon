@@ -955,8 +955,8 @@
     }
     
     #github {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         display: inline-block;
         background: url(img/github.png);
         background-size: 100% 100%;
@@ -968,6 +968,7 @@
         display: inline-block;
         background: url(img/phone.png);
         background-size: 100% 100%;
+        margin: 5px 5px
     }
 
     #E-mail {
@@ -976,6 +977,7 @@
         display: inline-block;
         background: url(img/email.png);
         background-size: 100% 100%;
+        margin: 5px 5px
     }
 
     #Kakao {
@@ -984,4 +986,5 @@
         display: inline-block;
         background: url(img/kakao.png);
         background-size: 100% 100%;
+        margin: 5px 5px
     }
