@@ -936,7 +936,7 @@
     .left_contents{
         float: left;
         padding-top: 50px;
-        margin-right: 90px;
+        margin-right: 60px;
         font-size: 25px;
         font-family: 'Lexend Giga', sans-serif;
     }
@@ -946,7 +946,7 @@
         border-left: 3px solid #4FC9DE;
         padding-top: 15px;
         padding-bottom: 12px;
-        padding-left: 125px;
+        padding-left: 60px;
         font-family: 'Lexend Giga', sans-serif;
     }
 
