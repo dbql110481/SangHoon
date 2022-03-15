@@ -953,29 +953,35 @@
     .letter {
         display: flex;
     }
-
-    #github, #Phone, #E-mail, #Kakao{
+    
+    #github {
         width: 35px;
         height: 35px;
         display: inline-block;
-    }
-    
-    #github {
         background: url(img/github.png);
         background-size: 100% 100%;
     }
 
     #Phone {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
         background: url(img/phone.png);
         background-size: 100% 100%;
     }
 
     #E-mail {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
         background: url(img/email.png);
         background-size: 100% 100%;
     }
 
     #Kakao {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
         background: url(img/kakao.png);
         background-size: 100% 100%;
     }
