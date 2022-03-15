@@ -955,6 +955,5 @@
         height: 40px;
         display: inline-block;
         background: url(img/github.png);
-        background-attachment: fixed;
-        background-position: 10px 10px;
+        background-size: 100% 100%;
     }
