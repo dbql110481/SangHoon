@@ -950,10 +950,32 @@
         font-family: 'Lexend Giga', sans-serif;
     }
 
-    #github{
+    .letter {
+        display: flex;
+    }
+
+    #github, #Phone, #E-mail, #Kakao{
         width: 40px;
         height: 40px;
         display: inline-block;
+    }
+    
+    #github {
         background: url(img/github.png);
+        background-size: 100% 100%;
+    }
+
+    #Phone {
+        background: url(img/phone.png);
+        background-size: 100% 100%;
+    }
+
+    #E-mail {
+        background: url(img/email.png);
+        background-size: 100% 100%;
+    }
+
+    #E-mail {
+        background: url(img/kakao.png);
         background-size: 100% 100%;
     }
