@@ -7,14 +7,18 @@
 
 ## 작업 환경
 - 언어 : JavaScript, HTML, CSS
-- 개발도구 : 이클립스
+- 개발도구 : 이클립스, Visual Studio Code
 - 운영체제 : Windows
 - 형상관리 : git, github
 
 ## 구현 화면
-![](img/1.png)
-![](img/2.png)
-![](img/3.png)
-![](img/4.png)
-![](img/5.png)
-![](img/6.png)
+![](img/1.PNG)
+![](img/2.PNG)
+![](img/3.PNG)
+![](img/4.PNG)
+![](img/5.PNG)
+![](img/6.PNG)
+![](img/7.PNG)
+![](img/8.PNG)
+![](img/9.PNG)
+![](img/10.PNG)
