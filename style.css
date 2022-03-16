@@ -97,7 +97,7 @@
     @media (max-width: 500px) {
         .box {
             position: relative;
-            width: 400px;
+            width: 450px;
             height: 100%;
             margin: 0 auto;
         }
@@ -149,13 +149,13 @@
 
     @media (max-width: 500px) {
         .photo {
-            width: 400px;
+            width: 450px;
             height: 820px;
             padding: 0px 30px 0px 30px;
         }
             
         .photo::after {
-            width: 400px;
+            width: 450px;
             height: 820px;
             content: "";
             background-image: url(img/main.jpg);
@@ -198,7 +198,7 @@
             font-size: 30px;
             line-height: 1.2;
             padding-top: 10%;
-            padding-left: 2%;
+            padding-left: 1%;
             font-family: 'Racing Sans One', cursive;
             z-index: -3;
         }
@@ -240,6 +240,16 @@
         background-color: #80A99C;	
         border-top: 300px solid #f1f1f1;
         border-right: 1600px solid transparent; 
+    }
+
+    @media (max-width: 500px) {
+        .skill-under {
+            width: 0;
+            height: 0;
+            background-color: #80A99C;	
+            border-top: 300px solid #f1f1f1;
+            border-right: 450px solid transparent; 
+        }
     }
 
     .skill-font {
@@ -504,6 +514,16 @@
         background-color: #80A99C;	
         border-bottom: 300px solid #fcf9e9;
         border-left: 1600px solid transparent;
+    }
+
+    @media (max-width: 500px) {
+        .portfolio-under {
+            width: 0;
+            height: 0;
+            background-color: #80A99C;	
+            border-bottom: 300px solid #fcf9e9;
+            border-left: 450px solid transparent;
+        }
     }
 
     .portfolio-list {
@@ -836,6 +856,16 @@
         background-color: #FAEBEF;	
         border-bottom: 230px solid #E5E5E5;
         border-right: 1600px solid transparent;
+    }
+
+    @media (max-width: 500px) {
+        .profile-bottom {
+            width: 0;
+            height: 0;
+            background-color: #FAEBEF;	
+            border-bottom: 230px solid #E5E5E5;
+            border-right: 450px solid transparent;
+        }
     }
 
     .contact {
