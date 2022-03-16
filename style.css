@@ -150,13 +150,13 @@
     @media (max-width: 500px) {
         .photo {
             width: 450px;
-            height: 820px;
+            height: 500px;
             padding: 0px 30px 0px 30px;
         }
             
         .photo::after {
             width: 450px;
-            height: 820px;
+            height: 500px;
             content: "";
             background-image: url(img/main.jpg);
             background-repeat: no-repeat;
@@ -195,10 +195,9 @@
         .name {
             position: fixed;
             color: #213236;
-            font-size: 30px;
+            font-size: 27px;
             line-height: 1.2;
             padding-top: 10%;
-            padding-left: 1%;
             font-family: 'Racing Sans One', cursive;
             z-index: -3;
         }
@@ -256,6 +255,14 @@
         color: #9354ED;
         font-size: 40px;
         font-family: 'Righteous', cursive;
+    }
+
+    @media (max-width: 500px) {
+        .skill-font {
+            color: #9354ED;
+            font-size: 20px;
+            font-family: 'Righteous', cursive;
+        }
     }
 
     .container {
