@@ -1445,7 +1445,25 @@
         font-size: 30px;
         font-family: 'Righteous', cursive;
         margin-bottom: 10px;
-    }   
+    }
+    
+    .profile-section-edu {
+        width: 360px;
+        height: 100%;
+        margin-left: 26%;
+    }
+    
+    .education-font {
+        color: #FAEBEF;
+        font-size: 30px;
+        font-family: 'Righteous', cursive;
+        margin-bottom: 10px;
+    }
+    
+    .education {
+        font-size: 13px;
+        color: #FAEBEF;
+    }
         
     .slides div:first-child { 
         margin-left: 10px; 
@@ -1490,6 +1508,22 @@
         margin-left: 5%;
     }
     
+    .controller span {
+        position: absolute;
+        background-color: transparent;
+        color: #333D79;
+        text-align: center;
+        border-radius: 50%;
+        padding: 10px 4px;
+        top: -7px;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    
+    .prev {
+        left: 0;
+    }
+    
     .scene {
         width: 340px;
         height: 140px;
@@ -1507,7 +1541,7 @@
         padding-left: 41px;
         font-size: 20px;
     }
-    
+
     .card_front:before {
         content: '';
         display: block;
@@ -1522,7 +1556,7 @@
         border-color: transparent transparent rgba(56, 173, 193, 1.0);
         transition-property: all;
         transition-duration: 1.5s;
-    }    
+    }   
     
     .card_front:hover:before {
         content: '';
