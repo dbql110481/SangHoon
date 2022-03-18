@@ -531,7 +531,7 @@
     } 
 
     .modal-img {
-        width: 48%;
+        width: 700px;
         height: 100%;
     }
 
@@ -1413,7 +1413,23 @@
     .clearfix {
         display: block;
         position: relative;
-    }    
+    }  
+        
+    .modal-detail {
+        font-size: 10pt;
+    } 
+    
+    .modal-img {
+        width: 48%;
+        height: 100%;
+    }
+    
+    #modal-title {
+        font-weight: bold;
+        font-family: 'Righteous', cursive;
+        font-size: 15pt;
+        margin-bottom: 10px;
+    }
         
     .profile-top {
         width: 0;
