@@ -177,7 +177,9 @@
         slides.style.left = -num * window.innerWidth + 'px'; 
         currentIdx = num;  
     } 
-    
+
+    function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+
     prev.addEventListener('click', function () { 
         if (currentIdx !== 0) moveSlide(currentIdx - 1); 
         document.getElementById("change1").style.backgroundColor = "#FAEBEF";
@@ -205,5 +207,3 @@
         }   
         document.getElementById("career").style.display = "none";
     });
-
-function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
