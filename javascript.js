@@ -186,8 +186,8 @@
         document.getElementById("prev").style.color = "#333D79";
         document.getElementById("next").style.color = "#333D79";
         if(Mobile()){
-            document.getElementById("next").style.diplay = "block";
-            document.getElementById("prev").style.diplay = "none";
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "none";
         }
         document.getElementById("career").style.display = "block";
     }); 
@@ -200,8 +200,8 @@
         document.getElementById("prev").style.color = "#FAEBEF";
         document.getElementById("next").style.color = "#FAEBEF";
         if(Mobile()){
-            document.getElementById("next").style.diplay = "none";
-            document.getElementById("prev").style.diplay = "block";
+            document.getElementById("next").style.display = "none";
+            document.getElementById("prev").style.display = "block";
         }   
         document.getElementById("career").style.display = "none";
     });
