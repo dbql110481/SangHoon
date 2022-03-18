@@ -1522,6 +1522,7 @@
     
     .prev {
         left: 0;
+        display: none;
     }
     
     .scene {
