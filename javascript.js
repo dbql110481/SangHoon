@@ -185,7 +185,8 @@
         document.getElementById("change3").style.backgroundColor = "#FAEBEF";
         document.getElementById("prev").style.color = "#333D79";
         document.getElementById("next").style.color = "#333D79";
-        document.getElementById("next").style.diplay = "none";
+        document.getElementById("next").style.diplay = "block";
+        document.getElementById("prev").style.diplay = "none";
         document.getElementById("career").style.display = "block";
     }); 
     
@@ -196,6 +197,7 @@
         document.getElementById("change3").style.backgroundColor = "#333D79";
         document.getElementById("prev").style.color = "#FAEBEF";
         document.getElementById("next").style.color = "#FAEBEF";
-        document.getElementById("prev").style.diplay = "none";
+        document.getElementById("next").style.diplay = "none";
+        document.getElementById("prev").style.diplay = "block";
         document.getElementById("career").style.display = "none";
     });
