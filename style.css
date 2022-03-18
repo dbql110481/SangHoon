@@ -1342,7 +1342,14 @@
         float: left;
         width: 340px;
         height: 300px;
-    }   
+    }
+        
+    .sq-box {
+        display: block;
+        position: relative;
+        width: 340px;
+        height: 300px;
+    }    
     
     .clearfix .text {
         left: 0;
