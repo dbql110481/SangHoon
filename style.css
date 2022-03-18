@@ -1414,13 +1414,25 @@
         display: block;
         position: relative;
     }  
+    
+    .modal {
+        background-color: #FFF;
+        display: none;
+        position: fixed;
+        margin: 4% auto;
+        left: 0;
+        right: 0;
+        width: 340px;
+        height: 500px;
+        z-index: 99;
+    }    
         
     .modal-detail {
         font-size: 10pt;
     } 
     
     .modal-img {
-        width: 48%;
+        width: 340px;
         height: 100%;
     }
     
@@ -1429,6 +1441,19 @@
         font-family: 'Righteous', cursive;
         font-size: 15pt;
         margin-bottom: 10px;
+    }
+    
+    #modal-info {
+        position: absolute;
+        top: 330px;
+        padding: 0 10px 0 10px;
+    }
+    
+    #slide-show {
+        width: 340px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
     }
         
     .profile-top {
