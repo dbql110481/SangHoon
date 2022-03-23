@@ -8,10 +8,7 @@ function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Op
     const modalSlideCount = slideImg.length; 
     const modalPrev = document.querySelector('.modal-prev'); 
     const modalNext = document.querySelector('.modal-next'); 
-    const modalSlideWidth = 700;
-    if(Mobile()){
-        modalSlideWidth = 340;
-    }  
+    const modalSlideWidth = 700; 
     const modalSlideMargin = 0; 
     
     modalSlides.style.width = (modalSlideWidth + modalSlideMargin) * modalSlideCount + 'px'; 
