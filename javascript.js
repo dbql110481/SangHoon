@@ -1,3 +1,6 @@
+// 모바일 접속 여부
+function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+
 // 팝업창 이미지 슬라이드
     const modalSlides = document.querySelector('.modal-slides'); 
     const slideImg = document.querySelectorAll('.modal-img');
@@ -5,13 +8,21 @@
     const modalSlideCount = slideImg.length; 
     const modalPrev = document.querySelector('.modal-prev'); 
     const modalNext = document.querySelector('.modal-next'); 
-    const modalSlideWidth = 700; 
+    if(Mobile()){
+        const modalSlideWidth = 340;
+    }else{
+        const modalSlideWidth = 700;
+    }     
     const modalSlideMargin = 0; 
     
     modalSlides.style.width = (modalSlideWidth + modalSlideMargin) * modalSlideCount + 'px'; 
     
     function modlaMoveSlide(num) { 
-        modalSlides.style.left = -num * 700 + 'px'; 
+        if(Mobile()){
+            modalSlides.style.left = -num * 340 + 'px';
+        }else{
+            modalSlides.style.left = -num * 700 + 'px';
+        }       
         modalCurrentIdx = num;  
     } 
     
@@ -176,9 +187,7 @@
     function moveSlide(num) { 
         slides.style.left = -num * window.innerWidth + 'px'; 
         currentIdx = num;  
-    } 
-
-    function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+    }
 
     prev.addEventListener('click', function () { 
         if (currentIdx !== 0) moveSlide(currentIdx - 1); 
