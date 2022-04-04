@@ -116,7 +116,10 @@ function Mobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Op
             if (event.which === 1) {
                 var mouseXpos = event.clientX;
                 var mouseYpos = event.clientY;
-                var YrotateDeg = (startXpos - mouseXpos) * -0.257;
+                var a = Math.pow((startXpos - mouseXpos), 2); 
+                var height = Math.sqrt(700*(startXpos - mouseXpos) - a);
+                var rad = Math.atan2(height, 350-(startXpos - mouseXpos));
+                var YrotateDeg = rad * (180 / Math.PI)*-1;
                 var XrotateDeg = (startYpos - mouseYpos) * 0.6;
 
                 document.getElementById("card").style.transform = "rotateX(" + XrotateDeg + "deg) rotateY(" + YrotateDeg + "deg)";
